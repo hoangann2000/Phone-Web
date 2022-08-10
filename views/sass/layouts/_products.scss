@@ -1,0 +1,117 @@
+.products {
+    #chonthuonghieu {
+        background-color: rgba(0, 209, 255, 1);
+    }
+    .btn_updown{
+        height: 20px;
+        width: 20px;
+        background-color: white;
+        line-height: 20px;
+        text-align: center;
+        border-radius: 50%;
+    }
+
+    .buttoncart {
+        border: 0;
+        background: linear-gradient(21deg, rgba(175, 229, 245, 1) 10%, rgba(29, 122, 150, 1) 40%, rgba(0, 209, 255, 0.95) 90%);
+        border-radius: 10px 20px 10px 20px;
+        height: 35px;
+    }
+    .modal-cart {
+        max-width: 800px;
+            .modal-content{
+                border-radius: 30px;
+                background: linear-gradient(21deg, rgba(175, 229, 245, 1) 10%, rgba(29, 122, 150, 1) 40%, rgba(0, 209, 255, 0.95) 90%);
+                margin: 0 auto;
+                width: 800px;
+            }
+            .modal-footer {
+                button {
+                    border-radius: 15px;
+                }
+            }
+        
+    }
+    .row {
+        .card {
+            display: flex;
+            flex-direction: column;
+            border: 0;
+            border-radius: 10px;
+            transition: all .5s;
+            height: 100%;
+
+            &:hover {
+                box-shadow: 2px 5px 25px 0px rgb(139, 138, 138);
+            }
+
+            .card-top {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                height: 360px;
+                flex-shrink: 0;
+                object-fit: cover;
+                
+                img {
+                    border-radius: 10px 10px 0 0;
+                    transition: all .5s;
+
+                    &:hover {
+                        transform: scale(1.05);
+                    }
+                }
+            }
+
+            .card-bottom {
+                display: flex;
+                flex-direction: column;
+                flex: 1;
+                text-align: center;
+                .card-content {
+                    display: flex;
+                    flex-direction: column;
+                    h1 {
+                        height: 100%;
+                        font-size: 15px;
+                        color: palevioletred;
+                        font-weight: 600;
+
+                    }
+
+                    p {
+                        font-size: 15px;
+                        color: rgb(34, 32, 32);
+                        font-weight: 400;
+                    }
+                }
+
+                h5 {
+                    font-size: 23px;
+                    color: black;
+                    font-weight: 700;
+                    margin-top: auto;
+                }
+            }
+        }
+        .card-hover {
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+            left: 0;
+            transform: translateY(50px);
+            transition: all .5s;
+
+        }
+        .col-4 {
+            overflow: hidden;
+            position: relative;
+
+            &:hover {
+                .card-hover {
+                    transform: translateY(-20px);
+                }
+            }
+        }
+    }
+}
